@@ -9,7 +9,6 @@ import Foundation
 
 struct HomeSections {
   let sections: [HomeView.Section]
-  
   init() {
     let c1 = Community(image: "c1_bunny",
                       communityName: "Bad Bunny",
@@ -39,14 +38,18 @@ struct HomeSections {
                                             image: "",
                                             date: "May 19, 2023",
                                             duration: "3:11"),
-                       recommendedFeedData: .init(title: "Bad Bunny",
+                       recommendedFeedData: .init(profileName: "Bad Bunny",
+                                                  image: "",
                                                   date: "Just now",
                                                   content: "It's snowing🌨️ in Korea today. Good luck with your concert"))
+    let f1 = FeedData(profileName: "Seungkwan", image: "feed_img", date: "Just now", content: "Wow, CARATs, I can't believe this has happened in my entire lifeIt's exciting. I'll continue to work hard!")
+    let f2 = FeedData(profileName: "Seungkwan2", image: "feed_img", date: "Just now", content: "Wow, CARATs, I can't believe this has happened in my entire lifeIt's exciting. I'll continue to work hardsadkl;ask;qwkel;kqw;ek;lqwkqlw;ekel;kqwe;lqwqw!")
     self.sections = [.joinedCommunityList([c1, c2, c3]),
                      .shopBanner(banner),
                      .listeningParty(lp),
                      .recommendedCommunity(lc)
-                     ,.feed([])
+                     ,.feed([f1, f2])
+                     
     ]
   }
 }

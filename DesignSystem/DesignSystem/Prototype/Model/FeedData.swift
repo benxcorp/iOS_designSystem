@@ -8,7 +8,8 @@
 import Foundation
 
 struct FeedData: Hashable {
-  let title: String
+  let profileName: String
+  let image: String
   let date: String
   let content: String
 }

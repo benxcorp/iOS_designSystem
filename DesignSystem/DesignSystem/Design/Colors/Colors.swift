@@ -12,6 +12,7 @@ struct Colors {
   static let textDefault = Color(red: 0.04, green: 0.04, blue: 0.04)
   static let surfaceGray75 = Color(red: 0.95, green: 0.95, blue: 0.97)
   static let surfaceGray900: Color = Color(red: 0.07, green: 0.07, blue: 0.07)
+  static let textGray500: Color = Color(red: 0.56, green: 0.56, blue: 0.56)
 }
 
 
