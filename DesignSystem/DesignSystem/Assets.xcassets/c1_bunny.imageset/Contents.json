@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "c1_bunny.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

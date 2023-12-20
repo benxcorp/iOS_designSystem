@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "c2_bts.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
