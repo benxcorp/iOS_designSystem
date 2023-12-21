@@ -30,6 +30,7 @@
 		3DD62C892B32F1E900B77B03 /* RecommendedCommunityHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C882B32F1E900B77B03 /* RecommendedCommunityHeader.swift */; };
 		3DD62C8B2B32F33300B77B03 /* RecommendedCommunityMVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */; };
 		3DD62C8D2B32FA2600B77B03 /* RecommendedCommunityPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */; };
+		DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		3DD62C882B32F1E900B77B03 /* RecommendedCommunityHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityHeader.swift; sourceTree = "<group>"; };
 		3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityMVView.swift; sourceTree = "<group>"; };
 		3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityPostView.swift; sourceTree = "<group>"; };
+		DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				3DD62C5B2B30063E00B77B03 /* SelectableButton */,
 				3DD62C5A2B3005D900B77B03 /* ShopBanner */,
 				3DD62C592B3005CF00B77B03 /* ListeningParty */,
+				DA8A370E2B33C5EA00B4EFC5 /* SideMenu */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -220,6 +223,14 @@
 			path = RecommendedCommunity;
 			sourceTree = "<group>";
 		};
+		DA8A370E2B33C5EA00B4EFC5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +312,7 @@
 				3DD62C5F2B3006C400B77B03 /* Colors.swift in Sources */,
 				3DD62C762B32B37000B77B03 /* Banner.swift in Sources */,
 				3DD62C7F2B32B59200B77B03 /* HomeSections.swift in Sources */,
+				DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */,
 				3DD62C612B30084600B77B03 /* CommonButton.swift in Sources */,
 				3DD62C862B32D7FF00B77B03 /* FeedView.swift in Sources */,
 				3DD62C742B32B35D00B77B03 /* Community.swift in Sources */,
