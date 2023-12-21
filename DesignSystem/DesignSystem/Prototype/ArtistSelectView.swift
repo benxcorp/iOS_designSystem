@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ArtistSelectView: View {
-  var dd = ""
   @Binding var isPresented: Bool
   @Environment(\.dismiss) var dismiss
   private let genre = ["#HIP HOP", "#POP","#INDIE", "#LATIN", "#ALTER\nNATIVE", "#METAL", "#ROCK", "R&B"]
