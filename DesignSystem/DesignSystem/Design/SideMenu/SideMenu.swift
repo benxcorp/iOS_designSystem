@@ -25,19 +25,14 @@ import SwiftUI
 ///         }
 ///         .offset(x: showSideMenu ? (UIScreen.main.bounds.width / 3) * 2 : 0)
 ///         .overlay {
-///           SideMenu<ArtistSelectionSideView>(
-///             childView: ArtistSelectionSideView(),
-///             isShown: $showSideMenu
-///           )
+///           SideMenu(childView: AnyView(ArtistSelectionSideView()), isShown: $showSideMenu)
 ///         }
 ///       }
 ///     }
 
-
-
-struct SideMenu<Content: View>: View {
+struct SideMenu: View {
   
-  let childView: Content
+  let childView: AnyView
   @Binding var isShown: Bool
   
   let width: CGFloat = (UIScreen.main.bounds.width / 3) * 2
@@ -155,5 +150,5 @@ struct ArtistSelectionSideView: View {
 }
 
 #Preview {
-  SideMenu<ArtistSelectionSideView>(childView: ArtistSelectionSideView(), isShown: .constant(true))
+  SideMenu(childView: AnyView(ArtistSelectionSideView()), isShown: .constant(true))
 }
