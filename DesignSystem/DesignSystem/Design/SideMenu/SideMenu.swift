@@ -9,7 +9,7 @@ import SwiftUI
 
 
 ///
-/// 사용 예시 1
+/// 사용 예시
 ///
 ///     struct HomeView: View {
 ///       @State var showSideMenu: Bool = false
