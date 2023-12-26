@@ -11,7 +11,49 @@ import SwiftUI
 struct DesignSystemApp: App {
     var body: some Scene {
         WindowGroup {
+          TabView {
+            
             HomeView()
+              .tabItem {
+                VStack {
+                  Image("home_tab_img")
+                  Text("Home")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Colors.textDefault)
+                }
+              }
+            
+            ShopMainView()
+              .tabItem {
+                VStack {
+                  Image("shop_tab_img")
+                  Text("Shop")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Colors.textDefault)
+                }
+                
+              }
+            DmMainView()
+              .tabItem {
+                VStack {
+                  Image("dm_tab_img")
+                  Text("DM")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Colors.textDefault)
+                }
+              }
+            MoreMainView()
+              .tabItem {
+                VStack {
+                  Image("more_tab_img")
+                  Text("More")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Colors.textDefault)
+                }
+              }
+          
+          }
+          .accentColor(.black)
         }
     }
 }

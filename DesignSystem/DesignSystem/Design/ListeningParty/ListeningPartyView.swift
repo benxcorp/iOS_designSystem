@@ -75,7 +75,10 @@ struct ListeningPartyView: View {
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(Constants.gray)
             }
+            
             slider
+              .frame(height: 28)
+              .padding(.horizontal, 10)
             Spacer()
           }
           .frame(width: proxy.size.width,

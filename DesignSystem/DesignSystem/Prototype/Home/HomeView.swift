@@ -12,19 +12,22 @@ struct HomeView: View {
   let section = HomeSections()
   var body: some View {
     GeometryReader { proxy in
-      VStack {
+      VStack(spacing: 0) {
         HStack(spacing: 20) {
           Image("logo")
           Spacer()
           Image("search")
           Image("bell")
+            .modifier(BadgeCountViewModifier(font: .system(size: 11, weight: .bold),
+                                             badgeColor: Colors.colorLightRed600,
+                                             count: 5, radius: 15))
           
         }
-        .frame(height: 20)
+        .frame(height: 44)
         .padding(.horizontal, 20)
         
         ScrollView(showsIndicators: false) {
-          LazyVGrid(columns: [GridItem(.flexible())], content: {
+          LazyVGrid(columns: [GridItem(.flexible())], spacing: 18, content: {
             
             
             ForEach(section.sections) { section in
@@ -32,7 +35,7 @@ struct HomeView: View {
             }
           })
         }
-        
+        Spacer()
       }
     }
     .fullScreenCover(isPresented: $isPresentedOnboardingView,
@@ -40,7 +43,7 @@ struct HomeView: View {
       GenreSelectView(isPresented: $isPresentedOnboardingView)
     })
     .onAppear {
-      isPresentedOnboardingView = true
+      isPresentedOnboardingView = false
     }
     
   }
@@ -50,33 +53,48 @@ extension HomeView {
   struct SectionView: View {
     let type: HomeView.Section
     let size: CGSize
+   
+    func itemSize(count: Int) -> CGFloat {
+      let width: CGFloat = size.width - 40 - CGFloat(count * 8)
+      print(width)
+      return  width / 4
+    }
     var body: some View {
-      
+    
       switch type {
       case .joinedCommunityList(let array):
         ScrollView(.horizontal) {
-          LazyHGrid(rows: [GridItem(.fixed(50))], content: {
+          LazyHGrid(rows: [GridItem(.flexible())], alignment: .top, content: {
             ForEach(array) { community in
-              VStack(spacing: 6) {
-                Image(community.image)
-                  .resizable()
-                  .scaledToFill()
-                  .frame(width: 80)
-                  .clipShape(Circle())
-                Text(community.communityName)
-                  .font(.system(size: 12, weight: .bold))
+              if community.communityName.isEmpty {
+                  Colors.surfaceGray100
+                  .frame(width: itemSize(count: array.count), height: itemSize(count: array.count))
+                    .clipShape(Circle())
+                    .overlay(Image("plus_black"))
+              } else {
+                VStack(spacing: 6) {
+                  Image(community.image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: itemSize(count: array.count), height: itemSize(count: array.count))
+                    .clipShape(Circle())
+                  
+                  Text(community.communityName)
+                    .font(.system(size: 12, weight: .bold))
+                  Spacer()
+                }
+                .frame(alignment: .top)
               }
-              
             }
           })
         }
-        .frame(height: 140)
         .padding(.horizontal, 20)
-        
+        .padding(.vertical, 16)
+     
       case .shopBanner(let banner):
         ShopBannerView()
           .frame(width: size.width - 20, height: size.width - 20)
-        
+
       case .recommendedCommunity(let community):
         
         VStack(spacing: 18) {
@@ -93,6 +111,12 @@ extension HomeView {
               .shadow(radius: 10)
           }
           
+          CommonButton(type: .text("Go to Official Home"), textColor: .white, fontSize: 15) {
+            
+          }
+          .frame(width: 195, height: 42)
+          .background(.black)
+          .clipShape(RoundedRectangle(cornerRadius: 20))
             
         }
         .padding(.horizontal, 10)
@@ -113,6 +137,8 @@ extension HomeView {
             
           }
         }
+        .compositingGroup()
+        .shadow(radius: 20)
         .padding(.horizontal, 10)
         
         

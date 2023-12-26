@@ -27,8 +27,7 @@ struct FeedView: View {
             .frame(height: 219)
             .clipShape(RoundedRectangle(cornerRadius: 16))
         }
-        
-        infoView
+        ReactionView()
           .frame(height: 57)
         
         Text("Wow, CARATs, I can't believe this has happened in my entire lifeIt's exciting. I'll continue to work hard!")
@@ -37,14 +36,15 @@ struct FeedView: View {
           .lineLimit(nil)
           .padding(.horizontal, 20)
           
-        
+        Spacer()
+          .frame(height: 24)
         Spacer()
           
       }
       .background(.white)
-      .compositingGroup()
-      //.clipShape(RoundedRectangle(cornerRadius: 20))
-      .shadow(color: .yellow, radius: 2)
+      //.compositingGroup()
+      .clipShape(RoundedRectangle(cornerRadius: 20))
+      //.shadow(color: .yellow, radius: 2)
   }
   
   var titleView: some View {
@@ -67,26 +67,6 @@ struct FeedView: View {
     .frame(height: 37)
     .padding(.horizontal, 20)
   }
-  
-  var infoView: some View {
-    HStack(spacing: 14) {
-      HStack(spacing: 4) {
-        Image("feed_heart")
-        Text("38k")
-          .font(.system(size: 13, weight: .medium))
-      }
-      
-      HStack(spacing: 4) {
-        Image("feed_chat")
-        Text("38k")
-          .font(.system(size: 13, weight: .medium))
-      }
-      
-      Spacer()
-    }
-    .padding(.horizontal, 20)
-  }
-    
 }
 
 #Preview {

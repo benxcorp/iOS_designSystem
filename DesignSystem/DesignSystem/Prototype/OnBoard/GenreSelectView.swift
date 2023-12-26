@@ -50,6 +50,7 @@ struct GenreSelectView: View {
             CommonButton(type: .text("Skip"),
                          textColor: Colors.textDefault,
                          fontSize: 15) {
+              isPresented = false
             }
                          .frame(width: 153,
                                 height: 10)

@@ -25,6 +25,11 @@ struct HomeSections {
                       memberCount: "2399985",
                       recommendedMV: nil,
                       recommendedFeedData: nil)
+    let c4 = Community(image: "",
+                      communityName: "",
+                      memberCount: "",
+                      recommendedMV: nil,
+                      recommendedFeedData: nil)
     let banner = Banner(image: "", title: "Noche de\nBad Bunny", description: "Pre-order now on Weverse Shop!")
     let lp = ListeningParty(image: "lp_artist", albumTitle: "UNFORGIVEN (feat. Nile Rodgers)",
                             albumImage: "",
@@ -44,7 +49,7 @@ struct HomeSections {
                                                   content: "It's snowing🌨️ in Korea today. Good luck with your concert"))
     let f1 = FeedData(profileName: "Seungkwan", image: "feed_img", date: "Just now", content: "Wow, CARATs, I can't believe this has happened in my entire lifeIt's exciting. I'll continue to work hard!")
     let f2 = FeedData(profileName: "Seungkwan2", image: "feed_img", date: "Just now", content: "Wow, CARATs, I can't believe this has happened in my entire lifeIt's exciting. I'll continue to work hardsadkl;ask;qwkel;kqw;ek;lqwkqlw;ekel;kqwe;lqwqw!")
-    self.sections = [.joinedCommunityList([c1, c2, c3]),
+    self.sections = [.joinedCommunityList([c1, c2, c3, c4]),
                      .shopBanner(banner),
                      .listeningParty(lp),
                      .recommendedCommunity(lc)
