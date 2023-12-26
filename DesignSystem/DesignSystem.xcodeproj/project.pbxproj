@@ -31,6 +31,10 @@
 		3DD62C8B2B32F33300B77B03 /* RecommendedCommunityMVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */; };
 		3DD62C8D2B32FA2600B77B03 /* RecommendedCommunityPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */; };
 		3DD62CB12B33DBF500B77B03 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62CB02B33DBF500B77B03 /* Test.swift */; };
+		DA2498EF2B35435200A12205 /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2498EE2B35435200A12205 /* ReactionView.swift */; };
+		DA2498F12B3549B300A12205 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2498F02B3549B300A12205 /* CommentView.swift */; };
+		DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */; };
+		DA8A37152B343C2100B4EFC5 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A37142B343C2100B4EFC5 /* AuthorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityMVView.swift; sourceTree = "<group>"; };
 		3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityPostView.swift; sourceTree = "<group>"; };
 		3DD62CB02B33DBF500B77B03 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		DA2498EE2B35435200A12205 /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
+		DA2498F02B3549B300A12205 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		DA8A37142B343C2100B4EFC5 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,8 @@
 				3DD62C5B2B30063E00B77B03 /* SelectableButton */,
 				3DD62C5A2B3005D900B77B03 /* ShopBanner */,
 				3DD62C592B3005CF00B77B03 /* ListeningParty */,
+				DA8A370E2B33C5EA00B4EFC5 /* SideMenu */,
+				DA8A37132B343C1000B4EFC5 /* PostDetail */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -223,6 +233,24 @@
 			path = RecommendedCommunity;
 			sourceTree = "<group>";
 		};
+		DA8A370E2B33C5EA00B4EFC5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		DA8A37132B343C1000B4EFC5 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A37142B343C2100B4EFC5 /* AuthorView.swift */,
+				DA2498EE2B35435200A12205 /* ReactionView.swift */,
+				DA2498F02B3549B300A12205 /* CommentView.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,10 +333,14 @@
 				3DD62C5F2B3006C400B77B03 /* Colors.swift in Sources */,
 				3DD62C762B32B37000B77B03 /* Banner.swift in Sources */,
 				3DD62C7F2B32B59200B77B03 /* HomeSections.swift in Sources */,
+				DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */,
 				3DD62C612B30084600B77B03 /* CommonButton.swift in Sources */,
+				DA2498EF2B35435200A12205 /* ReactionView.swift in Sources */,
 				3DD62C862B32D7FF00B77B03 /* FeedView.swift in Sources */,
+				DA8A37152B343C2100B4EFC5 /* AuthorView.swift in Sources */,
 				3DD62C742B32B35D00B77B03 /* Community.swift in Sources */,
 				3DD62C6A2B3023F500B77B03 /* ArtistSelectView.swift in Sources */,
+				DA2498F12B3549B300A12205 /* CommentView.swift in Sources */,
 				3DD62C812B32B86C00B77B03 /* ListeningPartyView.swift in Sources */,
 				3DD62C712B32B16100B77B03 /* UIMath.swift in Sources */,
 				3DD62C632B30085100B77B03 /* SelectableButton.swift in Sources */,
