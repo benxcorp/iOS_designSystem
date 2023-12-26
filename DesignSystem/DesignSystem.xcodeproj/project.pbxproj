@@ -30,6 +30,7 @@
 		3DD62C892B32F1E900B77B03 /* RecommendedCommunityHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C882B32F1E900B77B03 /* RecommendedCommunityHeader.swift */; };
 		3DD62C8B2B32F33300B77B03 /* RecommendedCommunityMVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */; };
 		3DD62C8D2B32FA2600B77B03 /* RecommendedCommunityPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */; };
+		3DD62CB12B33DBF500B77B03 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62CB02B33DBF500B77B03 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		3DD62C882B32F1E900B77B03 /* RecommendedCommunityHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityHeader.swift; sourceTree = "<group>"; };
 		3DD62C8A2B32F33300B77B03 /* RecommendedCommunityMVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityMVView.swift; sourceTree = "<group>"; };
 		3DD62C8C2B32FA2600B77B03 /* RecommendedCommunityPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCommunityPostView.swift; sourceTree = "<group>"; };
+		3DD62CB02B33DBF500B77B03 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				3DD62C4B2B30052B00B77B03 /* GenreSelectView.swift */,
 				3DD62C692B3023F500B77B03 /* ArtistSelectView.swift */,
 				3DD62C6B2B32882900B77B03 /* HomeView.swift */,
+				3DD62CB02B33DBF500B77B03 /* Test.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				3DD62C832B32B95D00B77B03 /* StaticSlider.swift in Sources */,
 				3DD62C6C2B32882900B77B03 /* HomeView.swift in Sources */,
 				3DD62C892B32F1E900B77B03 /* RecommendedCommunityHeader.swift in Sources */,
+				3DD62CB12B33DBF500B77B03 /* Test.swift in Sources */,
 				3DD62C7C2B32B3B500B77B03 /* FeedData.swift in Sources */,
 				3DD62C8B2B32F33300B77B03 /* RecommendedCommunityMVView.swift in Sources */,
 				3DD62C6E2B328BA000B77B03 /* ShopBannerView.swift in Sources */,

@@ -53,7 +53,7 @@ struct ArtistSelectView: View {
                  maxHeight: .infinity)
         }
       }
-      .navigationBarBackButtonHidden(true)
+      //.navigationBarBackButtonHidden(true)
     }
   
   @ViewBuilder

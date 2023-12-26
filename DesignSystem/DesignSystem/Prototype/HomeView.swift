@@ -40,7 +40,7 @@ struct HomeView: View {
       GenreSelectView(isPresented: $isPresentedOnboardingView)
     })
     .onAppear {
-      isPresentedOnboardingView = false
+      isPresentedOnboardingView = true
     }
     
   }
@@ -109,9 +109,7 @@ extension HomeView {
         LazyVStack(spacing: 10) {
           ForEach(array, id: \.self) { community in
             FeedView(feedData: community)
-              .background(.white)
-              .clipShape(RoundedRectangle(cornerRadius: 20))
-              .shadow(radius: 20)
+              
             
           }
         }

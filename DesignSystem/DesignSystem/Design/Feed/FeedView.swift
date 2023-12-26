@@ -41,6 +41,10 @@ struct FeedView: View {
         Spacer()
           
       }
+      .background(.white)
+      .compositingGroup()
+      //.clipShape(RoundedRectangle(cornerRadius: 20))
+      .shadow(color: .yellow, radius: 2)
   }
   
   var titleView: some View {
