@@ -11,31 +11,22 @@ struct HomeView: View {
   @State var isPresentedOnboardingView = false
   let section = HomeSections()
   var body: some View {
-    GeometryReader { proxy in
-      VStack(spacing: 0) {
-        HStack(spacing: 20) {
-          Image("logo")
-          Spacer()
-          Image("search")
-          Image("bell")
-            .modifier(BadgeCountViewModifier(font: .system(size: 11, weight: .bold),
-                                             badgeColor: Colors.colorLightRed600,
-                                             count: 5, radius: 15))
+    NavigationView {
+      GeometryReader { proxy in
+        VStack(spacing: 0) {
+          naviBar
           
+          ScrollView(showsIndicators: false) {
+            LazyVGrid(columns: [GridItem(.flexible())], spacing: 18, content: {
+              
+              
+              ForEach(section.sections) { section in
+                SectionView(type: section, size: proxy.size)
+              }
+            })
+          }
+          Spacer()
         }
-        .frame(height: 44)
-        .padding(.horizontal, 20)
-        
-        ScrollView(showsIndicators: false) {
-          LazyVGrid(columns: [GridItem(.flexible())], spacing: 18, content: {
-            
-            
-            ForEach(section.sections) { section in
-              SectionView(type: section, size: proxy.size)
-            }
-          })
-        }
-        Spacer()
       }
     }
     .fullScreenCover(isPresented: $isPresentedOnboardingView,
@@ -46,6 +37,22 @@ struct HomeView: View {
       isPresentedOnboardingView = false
     }
     
+  }
+  
+  @ViewBuilder
+  var naviBar: some View {
+    HStack(spacing: 20) {
+      Image("logo")
+      Spacer()
+      Image("search")
+      Image("bell")
+        .modifier(BadgeCountViewModifier(font: .system(size: 11, weight: .bold),
+                                         badgeColor: Colors.colorLightRed600,
+                                         count: 5, radius: 15))
+      
+    }
+    .frame(height: 44)
+    .padding(.horizontal, 20)
   }
 }
 
@@ -72,19 +79,27 @@ extension HomeView {
                     .clipShape(Circle())
                     .overlay(Image("plus_black"))
               } else {
-                VStack(spacing: 6) {
-                  Image(community.image)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: itemSize(count: array.count), height: itemSize(count: array.count))
-                    .clipShape(Circle())
-                  
-                  Text(community.communityName)
-                    .font(.system(size: 12, weight: .bold))
-                  Spacer()
+                NavigationLink {
+                  ArtistHomeView()
+                } label: {
+                  VStack(spacing: 6) {
+                    Image(community.image)
+                      .resizable()
+                      .scaledToFill()
+                      .frame(width: itemSize(count: array.count), height: itemSize(count: array.count))
+                      .clipShape(Circle())
+                    
+                    Text(community.communityName)
+                      .font(.system(size: 12, weight: .bold))
+                    Spacer()
+                  }
+                  .frame(alignment: .top)
                 }
-                .frame(alignment: .top)
+
+                
               }
+                
+              
             }
           })
         }
@@ -126,6 +141,11 @@ extension HomeView {
         
       case .listeningParty(let listeningParty):
         ListeningPartyView()
+          .frame(width: size.width - 20, height: (size.width - 20) * 1.16)
+          .clipShape(RoundedRectangle(cornerRadius: 20))
+          .shadow(radius: 20)
+        
+        ListeningPartySimpleView()
           .frame(width: size.width - 20, height: (size.width - 20) * 1.16)
           .clipShape(RoundedRectangle(cornerRadius: 20))
           .shadow(radius: 20)

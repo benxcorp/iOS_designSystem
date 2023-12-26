@@ -11,6 +11,9 @@
 		3DB5BD852B3A991F009C7E63 /* DmMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD842B3A991F009C7E63 /* DmMainView.swift */; };
 		3DB5BD872B3A9927009C7E63 /* MoreMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD862B3A9927009C7E63 /* MoreMainView.swift */; };
 		3DB5BD8A2B3AA99D009C7E63 /* BadgeCountViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD892B3AA99D009C7E63 /* BadgeCountViewModifier.swift */; };
+		3DB5BD8D2B3AB7A7009C7E63 /* ArtistHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD8C2B3AB7A7009C7E63 /* ArtistHomeView.swift */; };
+		3DB5BD8F2B3AB835009C7E63 /* ListeningPartySimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD8E2B3AB835009C7E63 /* ListeningPartySimpleView.swift */; };
+		3DB5BD922B3ABE98009C7E63 /* ImageStackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5BD912B3ABE98009C7E63 /* ImageStackingView.swift */; };
 		3DD62C4A2B30052B00B77B03 /* DesignSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C492B30052B00B77B03 /* DesignSystemApp.swift */; };
 		3DD62C4C2B30052B00B77B03 /* GenreSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62C4B2B30052B00B77B03 /* GenreSelectView.swift */; };
 		3DD62C4E2B30052C00B77B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD62C4D2B30052C00B77B03 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		3DB5BD842B3A991F009C7E63 /* DmMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmMainView.swift; sourceTree = "<group>"; };
 		3DB5BD862B3A9927009C7E63 /* MoreMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMainView.swift; sourceTree = "<group>"; };
 		3DB5BD892B3AA99D009C7E63 /* BadgeCountViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCountViewModifier.swift; sourceTree = "<group>"; };
+		3DB5BD8C2B3AB7A7009C7E63 /* ArtistHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHomeView.swift; sourceTree = "<group>"; };
+		3DB5BD8E2B3AB835009C7E63 /* ListeningPartySimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningPartySimpleView.swift; sourceTree = "<group>"; };
+		3DB5BD912B3ABE98009C7E63 /* ImageStackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStackingView.swift; sourceTree = "<group>"; };
 		3DD62C462B30052B00B77B03 /* DesignSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD62C492B30052B00B77B03 /* DesignSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemApp.swift; sourceTree = "<group>"; };
 		3DD62C4B2B30052B00B77B03 /* GenreSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectView.swift; sourceTree = "<group>"; };
@@ -144,6 +150,22 @@
 			path = BadgeCount;
 			sourceTree = "<group>";
 		};
+		3DB5BD8B2B3AB781009C7E63 /* ArtistHome */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5BD8C2B3AB7A7009C7E63 /* ArtistHomeView.swift */,
+			);
+			path = ArtistHome;
+			sourceTree = "<group>";
+		};
+		3DB5BD902B3ABE86009C7E63 /* ImageStackIngView */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5BD912B3ABE98009C7E63 /* ImageStackingView.swift */,
+			);
+			path = ImageStackIngView;
+			sourceTree = "<group>";
+		};
 		3DD62C3D2B30052B00B77B03 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +205,7 @@
 		3DD62C572B3005BC00B77B03 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				3DB5BD8B2B3AB781009C7E63 /* ArtistHome */,
 				3DB5BD812B3A9901009C7E63 /* More */,
 				3DB5BD802B3A98FC009C7E63 /* DM */,
 				3DB5BD7F2B3A98F3009C7E63 /* Discover */,
@@ -199,6 +222,7 @@
 		3DD62C582B3005C700B77B03 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				3DB5BD902B3ABE86009C7E63 /* ImageStackIngView */,
 				3DB5BD882B3AA986009C7E63 /* BadgeCount */,
 				3DD62C872B32F1D000B77B03 /* RecommendedCommunity */,
 				3DD62C842B32D7F300B77B03 /* Feed */,
@@ -219,6 +243,7 @@
 			children = (
 				3DD62C802B32B86C00B77B03 /* ListeningPartyView.swift */,
 				3DD62C822B32B95D00B77B03 /* StaticSlider.swift */,
+				3DB5BD8E2B3AB835009C7E63 /* ListeningPartySimpleView.swift */,
 			);
 			path = ListeningParty;
 			sourceTree = "<group>";
@@ -397,7 +422,9 @@
 				3DD62CB12B33DBF500B77B03 /* Test.swift in Sources */,
 				3DD62C7C2B32B3B500B77B03 /* FeedData.swift in Sources */,
 				3DD62C8B2B32F33300B77B03 /* RecommendedCommunityMVView.swift in Sources */,
+				3DB5BD8D2B3AB7A7009C7E63 /* ArtistHomeView.swift in Sources */,
 				3DD62C6E2B328BA000B77B03 /* ShopBannerView.swift in Sources */,
+				3DB5BD922B3ABE98009C7E63 /* ImageStackingView.swift in Sources */,
 				3DD62C5F2B3006C400B77B03 /* Colors.swift in Sources */,
 				3DD62C762B32B37000B77B03 /* Banner.swift in Sources */,
 				3DB5BD832B3A9913009C7E63 /* ShopMainView.swift in Sources */,
@@ -415,6 +442,7 @@
 				3DB5BD872B3A9927009C7E63 /* MoreMainView.swift in Sources */,
 				3DD62C812B32B86C00B77B03 /* ListeningPartyView.swift in Sources */,
 				3DD62C712B32B16100B77B03 /* UIMath.swift in Sources */,
+				3DB5BD8F2B3AB835009C7E63 /* ListeningPartySimpleView.swift in Sources */,
 				3DD62C632B30085100B77B03 /* SelectableButton.swift in Sources */,
 				3DD62C7A2B32B39800B77B03 /* Video.swift in Sources */,
 				3DD62C4A2B30052B00B77B03 /* DesignSystemApp.swift in Sources */,
