@@ -33,6 +33,15 @@ struct DesignSystemApp: App {
                 }
                 
               }
+            DiscoverMainView()
+              .tabItem {
+                VStack {
+                  Image("discover_tab_img")
+                  Text("Discover")
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Colors.textDefault)
+                }
+              }
             DmMainView()
               .tabItem {
                 VStack {
