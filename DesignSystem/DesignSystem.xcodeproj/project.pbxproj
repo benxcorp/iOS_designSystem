@@ -42,6 +42,7 @@
 		DA2498F12B3549B300A12205 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2498F02B3549B300A12205 /* CommentView.swift */; };
 		DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */; };
 		DA8A37152B343C2100B4EFC5 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A37142B343C2100B4EFC5 /* AuthorView.swift */; };
+		F6FA09232B3C379200C6A8C2 /* DiscoverMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA09222B3C379200C6A8C2 /* DiscoverMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		DA2498F02B3549B300A12205 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		DA8A370F2B33C60D00B4EFC5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		DA8A37142B343C2100B4EFC5 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		F6FA09222B3C379200C6A8C2 /* DiscoverMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +119,6 @@
 				3DB5BD822B3A9913009C7E63 /* ShopMainView.swift */,
 			);
 			path = Shop;
-			sourceTree = "<group>";
-		};
-		3DB5BD7F2B3A98F3009C7E63 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
 			sourceTree = "<group>";
 		};
 		3DB5BD802B3A98FC009C7E63 /* DM */ = {
@@ -208,7 +203,7 @@
 				3DB5BD8B2B3AB781009C7E63 /* ArtistHome */,
 				3DB5BD812B3A9901009C7E63 /* More */,
 				3DB5BD802B3A98FC009C7E63 /* DM */,
-				3DB5BD7F2B3A98F3009C7E63 /* Discover */,
+				F6FA091F2B3BDE4300C6A8C2 /* Discover */,
 				3DB5BD7E2B3A98EA009C7E63 /* Shop */,
 				3DB5BD7D2B3A98E0009C7E63 /* OnBoard */,
 				3DB5BD7C2B3A98D2009C7E63 /* Home */,
@@ -344,6 +339,14 @@
 			path = PostDetail;
 			sourceTree = "<group>";
 		};
+		F6FA091F2B3BDE4300C6A8C2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA09222B3C379200C6A8C2 /* DiscoverMainView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +434,7 @@
 				3DD62C7F2B32B59200B77B03 /* HomeSections.swift in Sources */,
 				DA8A37102B33C60D00B4EFC5 /* SideMenu.swift in Sources */,
 				3DD62C612B30084600B77B03 /* CommonButton.swift in Sources */,
+				F6FA09232B3C379200C6A8C2 /* DiscoverMainView.swift in Sources */,
 				3DB5BD8A2B3AA99D009C7E63 /* BadgeCountViewModifier.swift in Sources */,
 				DA2498EF2B35435200A12205 /* ReactionView.swift in Sources */,
 				3DD62C862B32D7FF00B77B03 /* FeedView.swift in Sources */,

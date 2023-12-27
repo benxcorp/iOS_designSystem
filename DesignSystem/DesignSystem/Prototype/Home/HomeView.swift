@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
   @State var isPresentedOnboardingView = false
+  @State var isPresentedDiscover = false
+  
   let section = HomeSections()
   var body: some View {
     NavigationView {
