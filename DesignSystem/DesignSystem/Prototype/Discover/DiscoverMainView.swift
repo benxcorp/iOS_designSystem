@@ -21,15 +21,11 @@ struct DiscoverMainView: View {
     case post(image: String?, content: String)
   }
   
-//  @Binding var searchText: String
   @State var searchTextAreaIsHidden: Bool = false
   @State var scrollViewOffset: CGPoint = .zero {
     didSet {
       if scrollViewOffset.y <= 0 && oldValue.y < scrollViewOffset.y { return }
       if scrollViewOffset.y + scrollViewFrame.height + searchBarHeight >= contentsHeight { return }
-      print("aaa \(scrollViewOffset.y)")
-      print("bbb \(scrollViewFrame.height)")
-      print("ccc \(contentsHeight)")
       searchTextAreaIsHidden = oldValue.y < scrollViewOffset.y
     }
   }
@@ -260,15 +256,28 @@ struct DiscoverMainView: View {
                         value: CGPoint(x: $0.frame(in: .named("scroll")).origin.x,
                                        y: -$0.frame(in: .named("scroll")).origin.y))
         })
-        .onPreferenceChange(ScrollViewOffsetKey.self) {
-          print("jooni798// \($0)")
-          scrollViewOffset = $0
-        }
+        .onPreferenceChange(ScrollViewOffsetKey.self) { scrollViewOffset = $0 }
         .background(
           GeometryReader { proxy in
             Color.clear.onAppear { topContentsHeight = proxy.size.height }
           }
         )
+        
+        ZStack {
+          Image("discover_6")
+            .resizable()
+            .scaledToFill()
+        }
+        .frame(width: (UIScreen.main.bounds.width - 10*2), height: (UIScreen.main.bounds.width - 10*2) * 0.65)
+        .background(Color(.blue))
+        .cornerRadius(20)
+        .clipped()
+        .background(
+          GeometryReader { proxy in
+            Color.clear.onAppear { middleContentsHeight = 150 } // 임시 
+          }
+        )
+        
         
         HStack(alignment: .top, spacing: 9, content: {
           LazyVGrid(columns: [GridItem(.flexible(maximum: itemWidth))]) {
